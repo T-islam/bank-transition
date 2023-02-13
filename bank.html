@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Deposit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl font-semibold text-center">Your Account Details</h1>
+    </header>
+
+    <section class="mt-5">
+      <div
+        class="container mx-auto md:w-3/4 grid md:grid-cols-3 grid-cols-1 gap-5"
+      >
+        <!-- deposit  -->
+        <div
+          class="bg-green-600 rounded-lg text-center mt-5 h-60 p-4 text-white"
+        >
+          <h2 class="text-7xl">Deposit</h2>
+          <h1 class="text-8xl">$ <span id="deposit-amount">00</span></h1>
+        </div>
+        <!-- Withdraw  -->
+        <div class="bg-red-500 rounded-lg text-center mt-5 h-50 p-4 text-white">
+          <h2 class="text-7xl">Withdraw</h2>
+          <h1 class="text-8xl">$ <span id="Withdraw-amount">00</span></h1>
+        </div>
+        <!-- Total Balance  -->
+        <div
+          class="bg-pink-500 rounded-lg text-center mt-5 h-50 p-4 text-white"
+        >
+          <h2 class="text-7xl">Balance</h2>
+          <h1 class="text-8xl">$ <span id="Balance-amount">00</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="grid md:grid-cols-2 grid-cols-1 md:gap-4 md:w-3/4 mx-auto">
+        <!-- deposit input  -->
+        <div class="bg-indigo-700 p-6 md:mt-[30%] rounded-lg">
+          <input
+            type="text"
+            name=""
+            id="deposit-value"
+            class="block mx-auto rounded-md w-3/4 p-2"
+            placeholder="enter your deposit amount $"
+          />
+          <button
+            class="mx-auto block text-white hover:text-black mt-4 px-10 bg-yellow-400 hover:bg-yellow-200 py-2 border border-current rounded-md"
+            id="deposit-btn"
+          >
+            Deposit
+          </button>
+        </div>
+        <!-- Widthrow input  -->
+        <div class="bg-indigo-700 p-6 mt-[30%] rounded-lg">
+          <input
+            type="text"
+            name=""
+            id="widthrow-value"
+            class="block mx-auto rounded-md w-3/4 p-2"
+            placeholder="enter your widthrow amount $"
+          />
+          <button
+            class="mx-auto block text-white hover:text-black mt-4 px-10 bg-yellow-400 hover:bg-yellow-200 py-2 border border-current rounded-md"
+            id="widthrow-btn"
+          >
+            Widthrow
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/transition.js"></script>
+  </body>
+</html>
